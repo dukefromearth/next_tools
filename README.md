@@ -27,11 +27,11 @@ Assumptions I made:
 I graphed out what this looked like to me to get a better understanding and it looked something like this:
 ![Imgur Image](https://i.imgur.com/IpLhw6y.png)
 
-The way that I interpreted the problem it seemed like it could be solved using Dijkstra's algorithm because it can handle negative weights, infinite loops, and terminal states that are inaccessible. 
+The way that I interpreted the problem, it seemed like it could be solved using Dijkstra's algorithm, because it can handle negative weights, infinite loops, and terminal states that are inaccessible. 
 
 <img src="https://i.imgur.com/PuuYMcc.gif" width=300></img>
 
-I initial thought that I could model this by modifying plinko by randomly assigning friction, restitution, to the nodes and calculating the transition probabilites. Given only a few days to complete a goal task, I decided scale the problem down to a much smaller task.
+I initially thought that I could model this by modifying plinko by randomly assigning friction, restitution, to the nodes and calculating the transition probabilites. Given only a few days to complete a goal task, I decided scale the problem down to a much smaller task.
 
 
 
