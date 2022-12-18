@@ -9,7 +9,7 @@ Select the next most likely tool in Sketchup using a Markov chain.
     b. Extensions/Next Tool/Clear Tool History. 
  
 ## How it works
-Tool in action            |          Diagram
+Tool in action            |    State Diagram
 :-------------------------:|:-------------------------:
 ![Imgur Image](https://i.imgur.com/3KuZ426.gif)  |  ![Imgur Image](https://i.imgur.com/0NDjgVx.png)
 
