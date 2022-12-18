@@ -3,8 +3,8 @@ Select the next most likely tool in Sketchup using a Markov chain.
 
 ## Installation instructions
 1. Download the rbz file in next_tools/rbz
-2. Install the sketchup extension using the following instructions: https://help.sketchup.com/en/extension-warehouse/adding-extensions-sketchup
-3. Add a hotkey for for the following commands using these instructions: https://help.sketchup.com/en/sketchup/customizing-your-keyboard-and-mouse#:~:text=Select%20Window%20%3E%20Preferences.,appears%20in%20the%20Assigned%20box  
+2. [Install the next_tools.rbz sketchup extension.](https://help.sketchup.com/en/extension-warehouse/adding-extensions-sketchup)
+3. [Add a hotkey for the following actions:](https://help.sketchup.com/en/sketchup/customizing-your-keyboard-and-mouse#:~:text=Select%20Window%20%3E%20Preferences.,appears%20in%20the%20Assigned%20box ) 
     a. Extensions/Next Tool/Most Likely Next Tool.  
     b. Extensions/Next Tool/Clear Tool History. 
  
