@@ -16,4 +16,3 @@ module NextTool
   EXTENSION.copyright = "#{EXTENSION.creator} 2022"
   Sketchup.register_extension(EXTENSION, true)
 end
-

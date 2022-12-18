@@ -10,6 +10,9 @@ module NextTool
   submenu.add_item("Most Likely Next Tool") {
     MyToolsObserver.set_next_tool()
   }
+  submenu.add_item("Clear Tool History") {
+    MyToolsObserver.clear_tools()
+  }
 
   # Attach the observers
   Sketchup.add_observer(MyAppObserver.new)

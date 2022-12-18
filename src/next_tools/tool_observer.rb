@@ -35,6 +35,10 @@ class MyToolsObserver < Sketchup::ToolsObserver
     end
   end
 
+  def self.clear_tools()
+    @@tools = Hash.new(false)
+  end
+
   def onActiveToolChanged(tools, tool_name, tool_id)
     if @@last_tool != ""
       if @@tools.key?(@@last_tool)
