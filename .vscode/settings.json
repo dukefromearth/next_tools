@@ -1,0 +1,9 @@
+{
+    "editor.defaultFormatter": "rebornix.ruby",
+    "editor.formatOnSave": true,
+    "ruby.intellisense": "rubyLocate",
+    "ruby.format": true,
+    "[ruby]": {
+        "editor.defaultFormatter": "jnbt.vscode-rufo"
+    }
+}
