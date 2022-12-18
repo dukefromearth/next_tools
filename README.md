@@ -11,7 +11,7 @@ Select the next most likely tool in Sketchup using a Markov chain.
 ## How it works
 Tool in action            |          Diagram
 :-------------------------:|:-------------------------:
-![Imgur Image](https://i.imgur.com/3KuZ426.gif)  |  ![Imgur Image](https://i.imgur.com/0zex3qM.png)
+![Imgur Image](https://i.imgur.com/3KuZ426.gif)  |  ![Imgur Image](https://i.imgur.com/0NDjgVx.png)
 
 The plugin keeps track of state transitions from one tool to another and updates a transition matrix utilizing a markov chain. This allows the user to utilize only one hotkey to transition to multiple tools.
 
