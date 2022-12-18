@@ -20,7 +20,7 @@ Currently WIP - [Issues](https://github.com/dukefromearth/next_tools/issues)
 
 ## Why I made it
 
-I was given a problem statement:
+Inspired by this statement:
 `Given array of states that transition to one another. Calculate the final probability of every terminal state. States can feed back into themselves.`
 
 Assumptions I made:
