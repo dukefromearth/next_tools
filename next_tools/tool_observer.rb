@@ -4,6 +4,7 @@ class MyToolsObserver < Sketchup::ToolsObserver
   @@id = "ToolsObserver"
   @@tools = FileHandler.read_json_to_hash(@@id)
   @@last_tool = ""
+  @@errors = []
 
   def update_probs(last_tool, tool_name)
     total_entries = @@tools[last_tool]["total_entries"]
@@ -25,8 +26,12 @@ class MyToolsObserver < Sketchup::ToolsObserver
   end
 
   def self.set_next_tool()
-    if (@@tools[@@last_tool]["most_likely_tool"])
-      Sketchup.send_action("select" + @@tools[@@last_tool]["most_likely_tool"] + ":")
+    begin
+      tool = @@tools[@@last_tool]["most_likely_tool"]
+    rescue => exception
+      @@errors.push(exeception)
+    else
+      Sketchup.send_action("select" + tool + ":")
     end
   end
 
