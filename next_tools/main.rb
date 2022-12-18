@@ -1,4 +1,5 @@
 require "next_tools/tool_observer.rb"
+require "next_tools/app_observer.rb"
 
 module NextTool
   SKETCHUP_CONSOLE.show
@@ -9,13 +10,6 @@ module NextTool
   submenu.add_item("Most Likely Next Tool") {
     MyToolsObserver.set_next_tool()
   }
-
-  # Saves the gathered data to a json file on quit
-  class MyAppObserver < Sketchup::AppObserver
-    def onQuit()
-      MyToolsObserver.save_tools()
-    end
-  end
 
   # Attach the observers
   Sketchup.add_observer(MyAppObserver.new)
