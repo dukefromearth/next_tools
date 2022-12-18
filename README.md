@@ -13,7 +13,10 @@ Tool in action            |          Diagram
 :-------------------------:|:-------------------------:
 ![Imgur Image](https://i.imgur.com/3KuZ426.gif)  |  ![Imgur Image](https://i.imgur.com/0zex3qM.png)
 
-The plugin keeps track of state transitions from one tool to another and updates a transition matrix utilizing a markov chain. This allows the user to utilize only one hotkey to transition to multiple tools. 
+The plugin keeps track of state transitions from one tool to another and updates a transition matrix utilizing a markov chain. This allows the user to utilize only one hotkey to transition to multiple tools.
+
+## Limitations
+It's not very useful at all and is full of bugs. That is probably very indicative of where I currently stand as a programmer. 
 
 ## Why I made it
 
