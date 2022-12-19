@@ -31,7 +31,7 @@ Assumptions I made:
 I graphed out what this looked like to me to get a better understanding and it looked something like this:
 ![Imgur Image](https://i.imgur.com/IpLhw6y.png)
 
-The way that I interpreted the problem, it seemed like it could be solved using Dijkstra's algorithm, because it can handle negative weights, infinite loops, and terminal states that are inaccessible. 
+The way that I interpreted the problem, it seemed like it could be solved using Dijkstra's algorithm, because it can handle negative weights, infinite loops, and terminal states that are inaccessible. Though... what we want is the sum of all paths and dijkstra's would give us the shortest path. 
 
 <img src="https://i.imgur.com/PuuYMcc.gif" width=300></img>
 
