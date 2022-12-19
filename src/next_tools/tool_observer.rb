@@ -8,17 +8,21 @@ class MyToolsObserver < Sketchup::ToolsObserver
 
   def update_probs(last_tool, tool_name)
     total_entries = @@tools[last_tool]["total_entries"]
-    maxVal = 0.0
+    max_probability = 0.0
+    probability = 0.0
     mostLikelyTool = ""
     @@tools[last_tool].each do |key, value|
-      if key != "total_entries"
+      if key != "total_entries" && key != "most_likely_tool"
         if key == tool_name
-          @@tools[last_tool][tool_name] = (value.to_f * total_entries + 1.0) / (total_entries + 1.0)
+          probability = (value.to_f * total_entries + 1.0) / (total_entries + 1.0)
+          @@tools[last_tool][tool_name] = probability
         else
-          @@tools[last_tool][key] = (value.to_f * total_entries) / (total_entries + 1.0)
+          probability = (value.to_f * total_entries) / (total_entries + 1.0)
+          @@tools[last_tool][key] = probability
         end
-        if @@tools[last_tool][tool_name] > maxVal
-          mostLikelyTool = tool_name
+        if probability >= max_probability
+          mostLikelyTool = key
+          max_probability = probability
         end
       end
     end
