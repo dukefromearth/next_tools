@@ -1,6 +1,8 @@
 # next_tools
 Select the next most likely tool in Sketchup using a Markov chain. 
 
+Tested on: Mac OS Montery v12.6 with SketchUp Make Version 17.3.116
+
 ## Installation instructions
 1. Download the rbz file in [next_tools/rbz](https://github.com/dukefromearth/next_tools/tree/master/rbz)  
 2. [Install the next_tools.rbz sketchup extension.](https://help.sketchup.com/en/extension-warehouse/adding-extensions-sketchup)
