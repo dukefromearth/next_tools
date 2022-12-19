@@ -10,7 +10,7 @@ class MyToolsObserver < Sketchup::ToolsObserver
     total_entries = @@tools[last_tool]["total_entries"]
     max_probability = 0.0
     probability = 0.0
-    mostLikelyTool = ""
+    most_likely_tool = ""
     @@tools[last_tool].each do |key, value|
       if key != "total_entries" && key != "most_likely_tool"
         if key == tool_name
@@ -21,12 +21,12 @@ class MyToolsObserver < Sketchup::ToolsObserver
           @@tools[last_tool][key] = probability
         end
         if probability >= max_probability
-          mostLikelyTool = key
+          most_likely_tool = key
           max_probability = probability
         end
       end
     end
-    @@tools[last_tool]["most_likely_tool"] = mostLikelyTool
+    @@tools[last_tool]["most_likely_tool"] = most_likely_tool
   end
 
   def self.set_next_tool()
