@@ -15,7 +15,7 @@ Tool in action            |    State Diagram
 
 The plugin keeps track of state transitions from one tool to another and updates a transition matrix utilizing a markov chain. This allows the user to utilize only one hotkey to transition to multiple tools.
 
-### Known limitations - [Issues](https://github.com/dukefromearth/next_tools/issues)
+### [Known Issues](https://github.com/dukefromearth/next_tools/issues)
 
 ## Why I made it
 
