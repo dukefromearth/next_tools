@@ -2,7 +2,7 @@ require "next_tools/tool_observer.rb"
 require "next_tools/app_observer.rb"
 
 module NextTool
-  SKETCHUP_CONSOLE.show
+  # SKETCHUP_CONSOLE.show
 
   # Add items to menu
   plugins_menu = UI.menu("Plugins")
