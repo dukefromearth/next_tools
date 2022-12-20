@@ -4,12 +4,9 @@ require "json"
 class FileHandler
   @@file_path = "./Sketchup/NextTool"
   def self.read_json_to_hash(file_name)
-    puts @@file_path
-    puts file_name
     path = @@file_path + "/" + file_name + ".json"
     if File.exists?(path)
       file = File.read(path)
-      puts file
       return JSON.parse(file)
     else return Hash.new(false)     end
   end
