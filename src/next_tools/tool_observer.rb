@@ -1,10 +1,9 @@
-require "next_tools/file_handler"
-
 class MyToolsObserver < Sketchup::ToolsObserver
-  @@id = "ToolsObserver"
-  @@tools = FileHandler.read_json_to_hash(@@id)
-  @@last_tool = ""
-  @@errors = []
+  def initialize(tools)
+    @@tools = tools
+    @@last_tool = "selectTool"
+    @@errors = []
+  end
 
   def update_probs(last_tool, tool_name)
     total_entries = @@tools[last_tool]["total_entries"]
@@ -27,6 +26,10 @@ class MyToolsObserver < Sketchup::ToolsObserver
       end
     end
     @@tools[last_tool]["most_likely_tool"] = most_likely_tool
+  end
+
+  def get_tools
+    return @@tools
   end
 
   def self.set_next_tool()
@@ -64,9 +67,5 @@ class MyToolsObserver < Sketchup::ToolsObserver
     else
       @@last_tool = tool_name
     end
-  end
-
-  def self.save_tools()
-    FileHandler.save_json(@@tools, @@id)
   end
 end
